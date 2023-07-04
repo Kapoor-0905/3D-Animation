@@ -6,7 +6,7 @@ WORKDIR /usr/share/nginx/html
 
 # Copy the HTML and CSS files to the container
 COPY index.html .
-COPY styles.css ./css/
+COPY style.css ./css/
 
 # Optionally, you can copy other static assets (images, JS files, etc.) if your project requires them
 # COPY images/ ./images/
