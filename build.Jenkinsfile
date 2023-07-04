@@ -36,14 +36,6 @@ pipeline {
             }
         }
 
-        stage('Test') {
-            steps {
-                // Perform any testing steps you have for your HTML/CSS project
-                // For a simple HTML/CSS project, you might not have any tests.
-                // If you do have tests, you can run them here.
-            }
-        }
-
         stage('Clean Up') {
             steps {
                 // Clean up any temporary artifacts or containers
