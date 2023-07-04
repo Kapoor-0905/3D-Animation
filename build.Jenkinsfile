@@ -29,13 +29,6 @@ pipeline {
             }
         }
 
-        stage('Run Docker Container') {
-            steps {
-                // Run the Docker container
-                sh "docker run --rm -d -p 8080:80 $DOCKER_IMAGE_NAME"
-            }
-        }
-
         stage('Clean Up') {
             steps {
                 // Clean up any temporary artifacts or containers
