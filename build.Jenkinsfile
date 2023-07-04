@@ -14,7 +14,7 @@ pipeline {
                 // Copy HTML and CSS files to the 'dist' directory
                 sh 'mkdir -p dist/css'
                 sh 'cp index.html dist/'
-                sh 'cp styles.css dist/css/'
+                sh 'cp style.css dist/css/'
 
                 // Optionally, copy other static assets (images, JS files, etc.) if your project requires them
                 // sh 'cp -r images dist/'
