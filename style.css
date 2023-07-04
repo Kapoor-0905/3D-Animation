@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css?family=Libre+Baskerville&family=Source+Sans+Pro:wght@400;700&display=swap");
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: #252525;
+    font-family: "Libre Baskerville", serif;
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.card {
+    width: 230px;
+    height: 325px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    position: relative;
+    perspective: 1000px;
+    transform: perspective(1000px) translateY(0);
+    transform-style: preserve-3d;
+    transition: transform 0.8s ease-in-out;
+}
+
+.card .dark {
+    background-color: #31237c;
+    color: #fbfbfb;
+}
+
+.card .dark .purchase-button {
+    border: 1px solid indianred;
+}
+
+.card .light {
+    background-color: #fbfbfb;
+    color: #272727;
+}
+
+.card .light .purchase-button {
+    border: 1px solid indianred;
+}
