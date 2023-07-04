@@ -33,7 +33,6 @@ pipeline {
             steps {
                 // Clean up any temporary artifacts or containers
                 sh 'rm -rf dist'
-                sh "docker stop $docker ps -a -q --filter ancestor=$DOCKER_IMAGE_NAME"
             }
         }
     }
